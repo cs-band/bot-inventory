@@ -1,0 +1,21 @@
+{
+  "name": "bot-inventory",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "express": "^4.21.0",
+    "globaloffensive": "^3.1.0",
+    "luxon": "^3.5.0",
+    "mysql2": "^3.11.3",
+    "steam-totp": "^2.1.2",
+    "steam-tradeoffer-manager": "^2.11.5",
+    "steam-user": "^5.2.0",
+    "steamcommunity": "^3.48.3"
+  }
+}
