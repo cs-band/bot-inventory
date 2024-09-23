@@ -9,13 +9,15 @@ class Base {
         this.cfg = require('./env').infobot;
         this.db = new (require('./lib/db'))();
         this.DateTime = require("luxon").DateTime;
+        this.HTMLParser = require('node-html-parser');
         this.botController = new (require('./lib/bot/botController'))(this);
+        //
         this.start();
     }
 
     async start() {
         if (this.argExist("test")) {
-            this.log(`text`, "sdsa", "gfgfg");
+            //this.log(`text`, "sdsa", "gfgfg");
             //
             process.exit(1);
         }
