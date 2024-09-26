@@ -17,6 +17,7 @@
     "steam-totp": "^2.1.2",
     "steam-tradeoffer-manager": "^2.11.5",
     "steam-user": "^5.2.0",
-    "steamcommunity": "^3.48.3"
+    "steamcommunity": "^3.48.3",
+    "vdf-parser": "^1.2.1"
   }
 }

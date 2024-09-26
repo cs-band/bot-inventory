@@ -17,7 +17,6 @@ class Base {
 
     async start() {
         if (this.argExist("test")) {
-            //this.log(`text`, "sdsa", "gfgfg");
             //
             process.exit(1);
         }
@@ -110,7 +109,7 @@ class Base {
             let encryptedAccount = this.encryptAccount(login, pass, shared, identity);
             await this.db.addAccount(name, encryptedAccount.login, encryptedAccount.pass, encryptedAccount.shared, encryptedAccount.identity, encryptedAccount.iv, 1)
                 .then(id => {
-                    this.log(`Account added #${id}`,`${name}`);
+                    this.log(`Account added #${id}`, `${name}`);
                     this.botController.add({
                         id: parseInt(id),
                         name: name,
