@@ -17,6 +17,8 @@ class Base {
 
     async start() {
         if (this.argExist("test")) {
+            console.log(this.botController.itemNameGetWear("Glock-18 | Gamma Doppler Phase 4 (Factory New)")[0]);
+            console.log(this.botController.itemNameGetWear("Glock-18 | Gamma Doppler Phase 4"));
             //
             process.exit(1);
         }
